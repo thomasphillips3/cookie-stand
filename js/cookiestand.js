@@ -11,6 +11,7 @@ var PikePlace = function() {
   // Cookies per customer
   this.avgPerCust = 5.2;
   this.sales = this.dailySales();
+  this.sum = this.dailySales();
 }
 
 PikePlace.prototype.trafficGenerator = function (min, max){
@@ -25,7 +26,8 @@ PikePlace.prototype.dailySales = function (){
     hours[i] = this.trafficGenerator(this.minPerHour, this.maxPerHour);
     sum += hours[i];
   }
-  return sum;
+  hours[hours.length] = sum;
+  return hours;
 }
 
 var pike = new PikePlace();
@@ -42,12 +44,12 @@ function showPike() {
   var openHours = ["9 am", "10 am", "11 am", "12 pm", "1 pm", "2 pm", "3 pm", "4 pm"];
   for (i=0; i<openHours.length; i++) {
     var listEl = document.createElement("li");
-    listEl.innerHTML = openHours[i] + ": " + " cookies";
+    listEl.innerHTML = openHours[i] + ": " + pike.sales[i] + " cookies";
     document.getElementById("pikeForm").appendChild(listEl);
   }
-  write("pikeSum", "Total: " + pike.sales)
+  write("pikeSum", "Total: " + pike.sales[i] + " cookies");
   show("pikeSum");
-  hide("pikeButton")
+  hide("pikeButton");
 }
 
 function hide(id){
