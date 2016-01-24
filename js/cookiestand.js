@@ -128,11 +128,11 @@ function showSouthcenter() {
 
 var Bellevue = function() {
   // Customers per hour
-  this.minPerHour = 11;
-  this.maxPerHour = 38;
+  this.minPerHour = 20;
+  this.maxPerHour = 48;
 
   // Cookies per customer
-  this.avgPerCust = 1.9;
+  this.avgPerCust = 3.3;
   this.sales = this.dailySales();
   this.sum = this.dailySales();
 }
