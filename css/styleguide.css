@@ -1,6 +1,10 @@
 * {
   font-family: 'Oswald', sans-serif;
 }
+
+#body {
+  padding: 50px 30px 50px 80px;
+}
 #fontWindow {
   height: 5em;
   width: 50em;
@@ -11,9 +15,11 @@
 .box{
   height: 10em;
   width: 10em;
-  border: 1px black solid;
+  border: .2em white solid;
+  border-color: white|transparent;
   font-weight: bolder;
   color: white;
+  /*text-align: center;*/
 }
 
 #flightpath {
