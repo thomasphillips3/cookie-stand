@@ -7,18 +7,29 @@
   background-color: rgb(68, 68, 68);
   color: lightgray;
 }
+
 #fontWindow {
   height: 5em;
   width: 50em;
   font-family: 'Oswald', sans-serif;
   font-size: 1em;
+  color: black;
+  border: .2em white solid;
 }
 
+.legendText {
+  background-color: lightgray;
+}
 .box{
   height: 10em;
   border: .2em white solid;
   font-weight: bolder;
   color: white;
+}
+
+.styleElement {
+  border: .2em white solid;
+  padding: 10px 6px 10px 16px;
 }
 #colorgrid {
   border: .2em white solid;
@@ -45,4 +56,7 @@
 
 #brick {
   background-color: #CD6723;
+}
+#bgPic {
+  border: .2em white solid;  
 }
