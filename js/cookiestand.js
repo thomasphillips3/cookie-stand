@@ -46,4 +46,13 @@ function showPike() {
     document.getElementById("pikeForm").appendChild(listEl);
   }
   write("pikeSum", "Total: " + pike.sales)
+  show("pikeSum");
+  hide("pikeButton")
+}
+
+function hide(id){
+  document.getElementById(id).style.display = "none";
+}
+function show(id){
+  document.getElementById(id).style.display = "block";
 }
