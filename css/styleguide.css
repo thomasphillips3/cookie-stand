@@ -4,6 +4,8 @@
 
 #body {
   padding: 50px 30px 50px 80px;
+  background-color: rgb(68, 68, 68);
+  color: lightgray;
 }
 #fontWindow {
   height: 5em;
@@ -14,14 +16,13 @@
 
 .box{
   height: 10em;
-  width: 10em;
   border: .2em white solid;
-  border-color: white|transparent;
   font-weight: bolder;
   color: white;
-  /*text-align: center;*/
 }
-
+#colorgrid {
+  border: .2em white solid;
+}
 #flightpath {
   background-color: #51396C;
 }
