@@ -126,6 +126,46 @@ function showSouthcenter() {
   hide("southcenterButton");
 }
 
+var Bellevue = function() {
+  // Customers per hour
+  this.minPerHour = 11;
+  this.maxPerHour = 38;
+
+  // Cookies per customer
+  this.avgPerCust = 1.9;
+  this.sales = this.dailySales();
+  this.sum = this.dailySales();
+}
+
+Bellevue.prototype.trafficGenerator = function (min, max){
+   return Math.floor(Math.random()*(max-(min+1))) + min;
+}
+
+Bellevue.prototype.dailySales = function (){
+  var sum = 0;
+  var hours = new Array(8);
+
+  for (i=0; i<hours.length; i++) {
+    hours[i] = this.trafficGenerator(this.minPerHour, this.maxPerHour);
+    sum += hours[i];
+  }
+  hours[hours.length] = sum;
+  return hours;
+}
+
+var bellevue = new Bellevue();
+
+function showBellevue() {
+  var openHours = ["9 am", "10 am", "11 am", "12 pm", "1 pm", "2 pm", "3 pm", "4 pm"];
+  for (i=0; i<openHours.length; i++) {
+    var listEl = document.createElement("li");
+    listEl.innerHTML = openHours[i] + ": " + bellevue.sales[i] + " cookies";
+    document.getElementById("bellevueForm").appendChild(listEl);
+  }
+  write("bellevueSum", "Total: " + bellevue.sales[i] + " cookies");
+  show("bellevueSum");
+  hide("bellevueButton");
+}
 
 function write(id, msg){
   document.getElementById(id).innerHTML = msg;
