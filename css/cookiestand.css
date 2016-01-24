@@ -1,7 +1,13 @@
-#test{
-  color: red;
+.title {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.2em;
 }
 
-#pikeSum {
-  display: none;
+.form {
+  font-family: 'Arial', sans-serif;
+}
+
+.sums {
+  font-weight: bolder;
+  color: blue;
 }
