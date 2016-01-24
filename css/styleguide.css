@@ -1,0 +1,41 @@
+* {
+  font-family: 'Oswald', sans-serif;
+}
+#fontWindow {
+  height: 5em;
+  width: 50em;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1em;
+}
+
+.box{
+  height: 10em;
+  width: 10em;
+  border: 1px black solid;
+  font-weight: bolder;
+  color: white;
+}
+
+#flightpath {
+  background-color: #51396C;
+}
+
+#blueheart {
+  background-color: #2140D1;
+}
+
+#direct {
+  background-color: #F1AC04;
+}
+
+#rapid {
+  background-color: #106882;
+}
+
+#seeminglychangeable {
+  background-color: #F47C4D;
+}
+
+#brick {
+  background-color: #CD6723;
+}
