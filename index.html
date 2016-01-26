@@ -8,55 +8,78 @@
     <title>Fat Pat's Salmon Snacks Stats</title>
   </head>
   <body id="body">
-    <fieldset>
-      <legend class="title">Pike Place</legend>
-      <form id="pikeForm" class="form">
-        <input type="button" onclick="showPike()" value="Show Pike" id="pikeButton">
-        <p>
-          <span id="pikeSum" class="sums"></span>
-        </p>
-      </form>
-    </fieldset>
+    <header>
+      <h1><strong>Fat Pat's Salmon Snacks Stats</strong></h1>
+    </header>
 
-    <fieldset>
-      <legend class="title">SeaTac</legend>
-      <form id="seatacForm" class="form">
-        <input type="button" onclick="showSeatac()" value="Show SeaTac" id="seatacButton">
-        <p>
-          <span id="seatacSum" class="sums"></span>
-        </p>
-      </form>
-    </fieldset>
+    <div class="grid">
+      <div class="col-1-5">
+        Sidebar
+        <ul>
+          <li>Pike</li>
+          <li>Bellevue</li>
+          <li>Southcenter</li>
+          <li>SeaTac</li>
+          <li>Alki</li>
+        </ul>
 
-    <fieldset>
-      <legend class="title">SouthCenter</legend>
-      <form id="southcenterForm" class="form">
-        <input type="button" onclick="showSouthcenter()" value="Show SouthCenter" id="southcenterButton">
-        <p>
-          <span id="southcenterSum" class="sums"></span>
-        </p>
-      </form>
-    </fieldset>
+      </div>
 
-    <fieldset>
-      <legend class="title">Bellevue Square</legend>
-      <form id="bellevueForm" class="form">
-        <input type="button" onclick="showBellevue()" value="Show Bellevue Square" id="bellevueButton">
-        <p>
-          <span id="bellevueSum" class="sums"></span>
-        </p>
-      </form>
-    </fieldset>
+      <div class="col-4-5 main-section">
+        <fieldset class="row locations">
+          <legend>Location</legend>
 
-    <fieldset>
-      <legend class="title">Alki</legend>
-      <form id="alkiForm" class="form">
-        <input type="button" onclick="showAlki()" value="Show Alki" id="alkiButton">
-        <p>
-          <span id="alkiSum" class="sums"></span>
-        </p>
-      </form>
-    </fieldset>
+          <fieldset class="col-1-3">
+            <legend class="title">Pike Place</legend>
+            <form id="pikeForm" class="form">
+              <input type="button" onclick="showPike()" value="Show Pike" id="pikeButton">
+              <p>
+                <span id="pikeSum" class="sums"></span>
+              </p>
+            </form>
+          </fieldset>
 
+          <fieldset class="col-1-3">
+            <legend class="title">SeaTac</legend>
+            <form id="seatacForm" class="form">
+              <input type="button" onclick="showSeatac()" value="Show SeaTac" id="seatacButton">
+              <p>
+                <span id="seatacSum" class="sums"></span>
+              </p>
+            </form>
+          </fieldset>
+
+          <fieldset class="col-1-3">
+            <legend class="title">SouthCenter</legend>
+            <form id="southcenterForm" class="form">
+              <input type="button" onclick="showSouthcenter()" value="Show SouthCenter" id="southcenterButton">
+              <p>
+                <span id="southcenterSum" class="sums"></span>
+              </p>
+            </form>
+          </fieldset>
+
+          <fieldset class="col-1-3">
+            <legend class="title">Bellevue Square</legend>
+            <form id="bellevueForm" class="form">
+              <input type="button" onclick="showBellevue()" value="Show Bellevue Square" id="bellevueButton">
+              <p>
+                <span id="bellevueSum" class="sums"></span>
+              </p>
+            </form>
+          </fieldset>
+
+          <fieldset class="col-1-3">
+            <legend class="title">Alki</legend>
+            <form id="alkiForm" class="form">
+              <input type="button" onclick="showAlki()" value="Show Alki" id="alkiButton">
+              <p>
+                <span id="alkiSum" class="sums"></span>
+              </p>
+            </form>
+          </fieldset>
+        </fieldset>
+      </div>
+    </div>
   </body>
 </html>
