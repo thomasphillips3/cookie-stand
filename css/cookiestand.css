@@ -1,5 +1,8 @@
-.title {
+* {
   font-family: 'Oswald', sans-serif;
+}
+
+.title {
   font-size: 1.2em;
 }
 
@@ -13,5 +16,63 @@
 }
 
 #body{
-    background-image: url("http://img01.deviantart.net/6ee0/i/2008/131/7/8/crumpled_white_paper_texture_by_melemel.jpg");
+  padding: 50px 30px 50px 80px;
+  background-color: rgb(68, 68, 68);
+  color: lightgray;
+}
+
+/* Help with styling a grid from https://css-tricks.com/dont-overthink-it-grids/ */
+[class*='col-'] {
+  float: left;
+}
+
+.col-4-5 {
+  width: 80%;
+}
+
+.col-1-5 {
+  width: 20%;
+}
+
+.col-1-3 {
+  width: 33.33%;
+}
+
+.col-2-3 {
+  width: 66.66%;
+}
+
+.grid:after {
+  content: "";
+  displa: table;
+  clear: both;
+}
+/* Selectively color boxes using nth-child. Got
+help here: https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-child*/
+.row fieldset:nth-child(2n+1){
+  background-color: #51396C;
+}
+
+.row fieldset:nth-child(2n+0){
+  background-color: #2140D1;
+}
+
+.row fieldset:nth-child(3n+4){
+  background-color: #F1AC04;
+}
+
+.locations {
+  color: #CD6723;
+}
+
+.main-section {
+  color: lightgray;
+}
+
+.form {
+  color: lightgray;
+}
+.sums {
+  color: white;
+  font-weight: bold;
 }
