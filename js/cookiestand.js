@@ -12,11 +12,11 @@ var PikePlace = function() {
   this.avgPerCust = 5.2;
   this.sales = this.dailySales();
   this.sum = this.dailySales();
-}
+};
 
 PikePlace.prototype.trafficGenerator = function (min, max){
    return Math.floor(Math.random()*(max-(min+1))) + min;
-}
+};
 
 PikePlace.prototype.dailySales = function (){
   var sum = 0;
@@ -28,7 +28,7 @@ PikePlace.prototype.dailySales = function (){
   }
   hours[hours.length] = sum;
   return hours;
-}
+};
 
 var pike = new PikePlace();
 
@@ -53,11 +53,11 @@ var SeaTac = function() {
   this.avgPerCust = 1.2;
   this.sales = this.dailySales();
   this.sum = this.dailySales();
-}
+};
 
 SeaTac.prototype.trafficGenerator = function (min, max){
    return Math.floor(Math.random()*(max-(min+1))) + min;
-}
+};
 
 SeaTac.prototype.dailySales = function (){
   var sum = 0;
@@ -69,7 +69,7 @@ SeaTac.prototype.dailySales = function (){
   }
   hours[hours.length] = sum;
   return hours;
-}
+};
 
 var seatac = new SeaTac();
 
@@ -83,7 +83,7 @@ function showSeatac() {
   write("seatacSum", "Total: " + seatac.sales[i] + " cookies");
   show("seatacSum");
   hide("seatacButton");
-}
+};
 
 var Southcenter = function() {
   // Customers per hour
@@ -94,11 +94,11 @@ var Southcenter = function() {
   this.avgPerCust = 1.9;
   this.sales = this.dailySales();
   this.sum = this.dailySales();
-}
+};
 
 Southcenter.prototype.trafficGenerator = function (min, max){
    return Math.floor(Math.random()*(max-(min+1))) + min;
-}
+};
 
 Southcenter.prototype.dailySales = function (){
   var sum = 0;
@@ -110,7 +110,7 @@ Southcenter.prototype.dailySales = function (){
   }
   hours[hours.length] = sum;
   return hours;
-}
+};
 
 var southcenter = new Southcenter();
 
@@ -124,7 +124,7 @@ function showSouthcenter() {
   write("southcenterSum", "Total: " + southcenter.sales[i] + " cookies");
   show("southcenterSum");
   hide("southcenterButton");
-}
+};
 
 var Bellevue = function() {
   // Customers per hour
@@ -135,11 +135,11 @@ var Bellevue = function() {
   this.avgPerCust = 3.3;
   this.sales = this.dailySales();
   this.sum = this.dailySales();
-}
+};
 
 Bellevue.prototype.trafficGenerator = function (min, max){
    return Math.floor(Math.random()*(max-(min+1))) + min;
-}
+};
 
 Bellevue.prototype.dailySales = function (){
   var sum = 0;
@@ -151,7 +151,7 @@ Bellevue.prototype.dailySales = function (){
   }
   hours[hours.length] = sum;
   return hours;
-}
+};
 
 var bellevue = new Bellevue();
 
@@ -165,7 +165,7 @@ function showBellevue() {
   write("bellevueSum", "Total: " + bellevue.sales[i] + " cookies");
   show("bellevueSum");
   hide("bellevueButton");
-}
+};
 
 var Alki = function() {
   // Customers per hour
@@ -176,11 +176,11 @@ var Alki = function() {
   this.avgPerCust = 2.6;
   this.sales = this.dailySales();
   this.sum = this.dailySales();
-}
+};
 
 Alki.prototype.trafficGenerator = function (min, max){
    return Math.floor(Math.random()*(max-(min+1))) + min;
-}
+};
 
 Alki.prototype.dailySales = function (){
   var sum = 0;
@@ -192,7 +192,7 @@ Alki.prototype.dailySales = function (){
   }
   hours[hours.length] = sum;
   return hours;
-}
+};
 
 var alki = new Alki();
 
@@ -206,11 +206,11 @@ function showAlki() {
   write("alkiSum", "Total: " + alki.sales[i] + " cookies");
   show("alkiSum");
   hide("alkiButton");
-}
+};
 
 function write(id, msg){
   document.getElementById(id).innerHTML = msg;
-}
+};
 
 function hide(id){
   document.getElementById(id).style.display = "none";
