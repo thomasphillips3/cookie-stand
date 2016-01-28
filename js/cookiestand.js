@@ -11,8 +11,12 @@
     this.avgCookiesPerCust = avgCookiesPerCust;
     this.dailySales = dailySales();
   };
+  console.log("IIFE ran");
 }());
 
+var addStore = function(){
+  console.log("Yo.");
+}
 var PikePlace = function() {
   // Customers per hour
   this.minPerHour = 17;
