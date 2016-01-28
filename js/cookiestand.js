@@ -1,7 +1,17 @@
 // Thomas Phillips
 // CodeFellows - Code 201 Evening
-// Week 4, Class 7
+// Week 4, Class 10
 // The Homie Pat's Salmon Cookie Stand
+
+(function() {
+  var Store = function(name, minCustPerHour, maxCustPerHour, avgCookiesPerCust) {
+    this.name = name;
+    this.minCustPerHour = minCustPerHour;
+    this.maxCustPerHour = maxCustPerHour;
+    this.avgCookiesPerCust = avgCookiesPerCust;
+    this.dailySales = dailySales();
+  };
+}());
 
 var PikePlace = function() {
   // Customers per hour
