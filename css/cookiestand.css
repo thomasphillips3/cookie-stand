@@ -77,10 +77,9 @@ help here: https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-child*/
   font-weight: bold;
 }
 
-<<<<<<< HEAD
 #storeSelect{
   background-color: #F1AC04;
-=======
+}
 /* Basic Grey */
 /* Got template from: http://www.sanwebe.com/2013/10/css-html-form-styles */
 .basic-grey {
@@ -142,5 +141,4 @@ help here: https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-child*/
 }
 .basic-grey .button:hover {
   background: #CF7A7A
->>>>>>> refactor
 }
