@@ -76,3 +76,7 @@ help here: https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-child*/
   color: white;
   font-weight: bold;
 }
+
+#storeSelect{
+  background-color: #F1AC04;
+}
