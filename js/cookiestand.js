@@ -4,18 +4,55 @@
 // The Homie Pat's Salmon Cookie Stand
 
 (function() {
-  var Store = function(name, minCustPerHour, maxCustPerHour, avgCookiesPerCust) {
+  // var Store = function(name, minCustPerHour, maxCustPerHour, avgCookiesPerCust) {
+  function Store(name, minCustPerHour, maxCustPerHour, avgCookiesPerCust) {
     this.name = name;
     this.minCustPerHour = minCustPerHour;
     this.maxCustPerHour = maxCustPerHour;
     this.avgCookiesPerCust = avgCookiesPerCust;
     this.dailySales = dailySales();
+    this.storeHours = ["9am", "10am", "11am", "12pm", "1pm", "2pm", "3pm", "4pm"];
   };
   console.log("IIFE ran");
 }());
 
 var addStore = function(){
-  console.log("Yo.");
+  this.name = document.getElementById("name").value;
+  this.minCustPerHour = parseFloat(document.getElementById("minCustPerHour").value);
+  this.maxCustPerHour = parseFloat(document.getElementById("maxCustPerHour").value);
+  this.avgCookiesPerCust = parseFloat(document.getElementById("avgCookiesPerCust").value);
+  inputs = [name, minCustPerHour, maxCustPerHour, avgCookiesPerCust];
+
+  var elMinText = document.getElementById("minCustPerHour");
+
+  // console.log(inputs);
+  try {
+    validateInputs(inputs);
+    console.log(inputs);
+    if(minCustPerHour > maxCustPerHour) {
+      alert("Max must be greater than min");
+      elMinText.value = maxCustPerHour;
+      minCustPerHour = maxCustPerHour;
+    } else if ((minCustPerHour < 0) || (maxCustPerHour < 0) || (avgCookiesPerCust < 0)) {
+      alert("Enter non-negative values");
+    }
+    // var pike = new Store(name, minCustPerHour, maxCustPerHour, avgCookiesPerCust);
+
+  } catch(e) {
+    // alert("Invalid input");
+    throw(e);
+  }
+};
+
+function validateInputs(inputs){
+  // console.log(inputs);
+  for (var i=1; i<inputs.length; i++){
+    console.log(inputs[i]);
+    if (isNaN(inputs[i])){
+      // throw (e);
+      console.log("Value at index " + i + " is NaN");
+    }
+  }
 }
 var PikePlace = function() {
   // Customers per hour
