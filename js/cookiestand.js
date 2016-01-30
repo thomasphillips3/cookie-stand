@@ -8,7 +8,7 @@ function Store(name, minCustPerHour, maxCustPerHour, avgCookiesPerCust) {
   this.minCustPerHour = minCustPerHour;
   this.maxCustPerHour = maxCustPerHour;
   this.avgCookiesPerCust = avgCookiesPerCust;
-  // this.dailySales = dailySales();
+  var dailySales = dailySales();
   this.storeHours = ["9am", "10am", "11am", "12pm", "1pm", "2pm", "3pm", "4pm"];
 }
 
