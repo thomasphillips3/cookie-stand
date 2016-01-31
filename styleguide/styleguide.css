@@ -98,3 +98,7 @@
 #section {
   padding: 10px;
 }
+
+.pagetitle {
+  border-bottom: 1px lightgray solid;
+}
