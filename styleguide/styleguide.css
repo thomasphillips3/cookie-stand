@@ -9,7 +9,7 @@
 }
 
 #fontWindow {
-  height: 5em;
+  height: 12.5em;
   width: 50em;
   font-family: 'Oswald', sans-serif;
   font-size: 1em;
@@ -62,4 +62,39 @@
 }
 .fontcolor {
   font-size: .9em;
+}
+/*img {
+  height: auto;
+  width: auto;
+  max-width: 30px;
+  max-height: 30px;
+}*/
+
+#familypic {
+  background-image: url("../res/family.jpg");
+  height:240px;
+  background-size: cover;
+}
+
+#fishiespic {
+  background-image: url("../res/fishies.jpg");
+  height: 250px;
+  width: 282px;
+}
+
+#shirtpic {
+  background-image: url("../res/shirt.jpg");
+  background-size: cover;
+  height: 324px;
+}
+
+#salmonpic {
+  background-image: url("../res/salmon.png");
+  background-size: contain;
+  width: 787px;
+  height: 246px;
+}
+
+#section {
+  padding: 10px;
 }
