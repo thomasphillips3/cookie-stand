@@ -1,0 +1,26 @@
+body {
+  background-image: url("../res/fishies.jpg");
+  background-size: contain;
+  padding: 0em;
+}
+
+header {
+  background-color: #106882;
+  width: 100%;
+  height: 10.9375em;
+  position: absolute; /* Why does this line affect my background-image?*/
+  top: 0;
+  left: 0;
+}
+
+#logo {
+  width: 25%;
+  height: 10.9375em;
+  margin: 0em auto;
+  padding: 0em;
+  clear: both;
+}
+
+#logo2 {
+
+}
