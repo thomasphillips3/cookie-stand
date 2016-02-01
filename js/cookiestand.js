@@ -27,7 +27,6 @@ var addStore = function(){
 
   try {
     validateInputs(inputs);
-    // console.log(inputs);
     if(minCustPerHour > maxCustPerHour) {
       alert("Max must be greater than min");
       elMinText.value = maxCustPerHour;
@@ -50,7 +49,6 @@ var addStore = function(){
 
 function validateInputs(inputs){
   for (var i=1; i<inputs.length; i++){
-    // console.log(inputs[i]);
     if (isNaN(inputs[i])){
       // throw (e);
       console.log("Value at index " + i + " is NaN");
@@ -73,16 +71,3 @@ Store.prototype.dailySales = function (){
   hours[hours.length] = sum;
   return hours;
 };
-
-
-// function showPike() {
-//   var openHours = ["9 am", "10 am", "11 am", "12 pm", "1 pm", "2 pm", "3 pm", "4 pm"];
-//   for (var i=0; i<openHours.length; i++) {
-//     var listEl = document.createElement("li");
-//     listEl.innerHTML = openHours[i] + ": " + pike.sales[i] + " cookies";
-//     document.getElementById("pikeForm").appendChild(listEl);
-//   }
-//   write("pikeSum", "Total: " + pike.sales[i] + " cookies");
-//   show("pikeSum");
-//   hide("pikeButton");
-// }
