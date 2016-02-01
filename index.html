@@ -2,63 +2,14 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="css/cookiestand.css">
-    <link href='https://fonts.googleapis.com/css?family=Oswald:300' rel='stylesheet' type='text/css'>
-    <script src="js/cookiestand.js"></script>
-    <title>Fat Pat's Salmon Snacks Stats</title>
+    <title>Pat's Snacks</title>
+    <link rel="stylesheet" href="css/master.css" charset="utf-8">
   </head>
-
-  <body id="body">
+  <body>
     <header>
-      <h1 class="pagetitle" ><strong>Fat Pat's Salmon Snacks Stats</strong></h1>
-      <h2>Store Management Console</h3>
+      <!-- <h1>Pat's Salmon Cookies</h1> -->
+      <img src="res/pats_logo.png" alt="" />
     </header>
-
-    <form class="body-theme" action="index.html" method="post">
-      <h1 id="addStore">Add New Store
-        <span>All info is required</span>
-      </h1>
-
-      <label>
-        <span>Store Name: </span>
-        <input id="name" type="text" name="name" placeholder="Enter the store name">
-      </label>
-
-      <label>
-        <span>Minimum Customers Per Hour: </span>
-        <input id="minCustPerHour" type="number" step="1.0" name="minCustPerHour" placeholder="Minimum">
-      </label>
-
-      <label>
-        <span>Maximum Customers Per Hour: </span>
-        <input id="maxCustPerHour" type="number" step="1.0" name="maxCustPerHour" placeholder="Maximum">
-      </label>
-
-      <label>
-        <span>Average Cookies Per Customer: </span>
-        <input id="avgCookiesPerCust" type="number" step="0.1" name="avgCookiesPerCust" placeholder="Average">
-      </label>
-
-      <label>
-        <span>&nbsp;</span>
-        <input type="button" class="button" value="Add Store" onclick="addStore()" />
-      </label>
-    </form>
-
-    <!-- Main Section -->
-    <fieldset>
-      <legend>Locations</legend>
-      <table id="store-data">
-        <tr>
-          <th>Name</th>
-          <th>Minimum Customers Per Hour</th>
-          <th>Maximum Customers Per Hour</th>
-          <th>Average Cookies Per Customer</th>
-          <th>Total Daily Sales</th>
-        </tr>
-      </table>
-
-    </fieldset>
 
   </body>
 </html>
