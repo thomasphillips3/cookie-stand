@@ -1,14 +1,23 @@
 // Thomas Phillips
 // CodeFellows - Code 201 Evening
-// Week 4, Class 10
+// Week 4, Class 9
+// Refactor code to remove object literals, in favor of a single constructor function
 // The Homie Pat's Salmon Cookie Stand
+var NINE_AM = 0;
+var TEN_AM = 1;
+var ELEVEN_AM = 2;
+var NOON = 3;
+var ONE_PM = 4;
+var TWO_PM = 5;
+var THREE_PM = 6;
+var FOUR_PM = 7;
+var DAILY_TOTAL = 8;
 
 function Store(name, minCustPerHour, maxCustPerHour, avgCookiesPerCust) {
   this.name = name;
   this.minCustPerHour = minCustPerHour;
   this.maxCustPerHour = maxCustPerHour;
   this.avgCookiesPerCust = avgCookiesPerCust;
-  var dailySales = dailySales();
   this.storeHours = ["9am", "10am", "11am", "12pm", "1pm", "2pm", "3pm", "4pm"];
 }
 
@@ -39,8 +48,25 @@ var addStore = function(){
     }
 
     var store = new Store(name, minCustPerHour, maxCustPerHour, avgCookiesPerCust);
+    var sales = store.dailySales();
+    console.log(store);
     stores.push(store);
 
+    var elTableRow = document.createElement("tr");
+    var elTableData = document.createElement("td");
+    var elStoreData = document.getElementById("store-data");
+
+    // TODO: Get a loop to do this
+    elStoreData.appendChild(elTableRow);
+    elTableRow.appendChild(elTableData).innerHTML = store.name;
+    var elTableData = document.createElement("td");
+    elTableRow.appendChild(elTableData).innerHTML = store.minCustPerHour + " customers";
+    var elTableData = document.createElement("td");
+    elTableRow.appendChild(elTableData).innerHTML = store.maxCustPerHour + " customers";
+    var elTableData = document.createElement("td");
+    elTableRow.appendChild(elTableData).innerHTML = store.avgCookiesPerCust + " cookies";
+    var elTableData = document.createElement("td");
+    elTableRow.appendChild(elTableData).innerHTML = sales[DAILY_TOTAL] + " cookies";
   } catch(e) {
     // alert("Invalid input");
     throw(e);
@@ -57,7 +83,7 @@ function validateInputs(inputs){
 }
 
 Store.prototype.trafficGenerator = function (min, max){
-   return Math.floor(Math.random()*(max-(min+1))) + min;
+   return Math.floor(Math.random()*(max+1-(min))) + min;
 };
 
 Store.prototype.dailySales = function (){
@@ -65,7 +91,7 @@ Store.prototype.dailySales = function (){
   var hours = new Array(8);
 
   for (var i=0; i<hours.length; i++) {
-    hours[i] = this.trafficGenerator(this.minPerHour, this.maxPerHour);
+    hours[i] = this.trafficGenerator(this.minCustPerHour, this.maxCustPerHour);
     sum += hours[i];
   }
   hours[hours.length] = sum;
