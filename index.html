@@ -3,122 +3,62 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/cookiestand.css">
+    <link href='https://fonts.googleapis.com/css?family=Oswald:300' rel='stylesheet' type='text/css'>
     <script src="js/cookiestand.js"></script>
-    <!-- <link href='https://fonts.googleapis.com/css?family=Oswald:300' rel='stylesheet' type='text/css'> -->
     <title>Fat Pat's Salmon Snacks Stats</title>
   </head>
+
   <body id="body">
     <header>
-      <h1><strong>Fat Pat's Salmon Snacks Stats</strong></h1>
+      <h1 class="pagetitle" ><strong>Fat Pat's Salmon Snacks Stats</strong></h1>
+      <h2>Store Management Console</h3>
     </header>
 
-    <div class="grid">
-      <div class="col-1-5">
-        Sidebar
-        <section>
-          <select id="storeSelect">
-            <option value="Select">-- Select a Store --</option>
-            <option value="Pike">Pike</option>
-            <option value="Bellevue Square">Bellevue Square</option>
-            <option value="Southcenter">Southcenter</option>
-            <option value="SeaTac">SeaTac</option>
-            <option value="Alki">Alki</option>
-            <option value="newstore">Add New Store</option>
-          </select>
-        </section>
+    <form class="body-theme" action="index.html" method="post">
+      <h1 id="addStore">Add New Store
+        <span>All info is required</span>
+      </h1>
 
-        </ul>
+      <label>
+        <span>Store Name: </span>
+        <input id="name" type="text" name="name" placeholder="Enter the store name">
+      </label>
 
-      </div>
-      <form class="basic-grey" action="index.html" method="post">
-        <h1 id="addStore">Add New Store
-          <span>All info is required</span>
-        </h1>
+      <label>
+        <span>Minimum Customers Per Hour: </span>
+        <input id="minCustPerHour" type="number" step="1.0" name="minCustPerHour" placeholder="Minimum">
+      </label>
 
-        <label>
-          <span>Store Name: </span>
-          <input id="name" type="text" name="name" placeholder="Enter the store name">
-        </label>
+      <label>
+        <span>Maximum Customers Per Hour: </span>
+        <input id="maxCustPerHour" type="number" step="1.0" name="maxCustPerHour" placeholder="Maximum">
+      </label>
 
-        <label>
-          <span>Minimum Customers Per Hour: </span>
-          <input id="minCustPerHour" type="number" step="1.0" name="minCustPerHour" placeholder="Minimum">
-        </label>
+      <label>
+        <span>Average Cookies Per Customer: </span>
+        <input id="avgCookiesPerCust" type="number" step="0.1" name="avgCookiesPerCust" placeholder="Average">
+      </label>
 
-        <label>
-          <span>Maximum Customers Per Hour: </span>
-          <input id="maxCustPerHour" type="number" step="1.0" name="maxCustPerHour" placeholder="Maximum">
-        </label>
-
-        <label>
-          <span>Average Cookies Per Customer: </span>
-          <input id="avgCookiesPerCust" type="number" step="0.1" name="avgCookiesPerCust" placeholder="Average">
-        </label>
-
-        <label>
-          <span>&nbsp;</span>
-          <input type="button" class="button" value="Add Store" onclick="addStore()" />
-        </label>
-
-   </label>
-      </form>
+      <label>
+        <span>&nbsp;</span>
+        <input type="button" class="button" value="Add Store" onclick="addStore()" />
+      </label>
+    </form>
 
     <!-- Main Section -->
-      <div class="col-4-5 main-section">
-        <fieldset class="row locations">
-          <legend>Location</legend>
+    <fieldset>
+      <legend>Locations</legend>
+      <table id="store-data">
+        <tr>
+          <th>Name</th>
+          <th>Minimum Customers Per Hour</th>
+          <th>Maximum Customers Per Hour</th>
+          <th>Average Cookies Per Customer</th>
+          <th>Total Daily Sales</th>
+        </tr>
+      </table>
 
-          <fieldset class="col-1-3">
-            <legend class="title">Pike Place</legend>
-            <form id="pikeForm" class="form">
-              <input type="button" onclick="showPike()" value="Show Pike" id="pikeButton">
-              <p>
-                <span id="pikeSum" class="sums"></span>
-              </p>
-            </form>
-          </fieldset>
+    </fieldset>
 
-          <fieldset class="col-1-3">
-            <legend class="title">SeaTac</legend>
-            <form id="seatacForm" class="form">
-              <input type="button" onclick="showSeatac()" value="Show SeaTac" id="seatacButton">
-              <p>
-                <span id="seatacSum" class="sums"></span>
-              </p>
-            </form>
-          </fieldset>
-
-          <fieldset class="col-1-3">
-            <legend class="title">SouthCenter</legend>
-            <form id="southcenterForm" class="form">
-              <input type="button" onclick="showSouthcenter()" value="Show SouthCenter" id="southcenterButton">
-              <p>
-                <span id="southcenterSum" class="sums"></span>
-              </p>
-            </form>
-          </fieldset>
-
-          <fieldset class="col-1-3">
-            <legend class="title">Bellevue Square</legend>
-            <form id="bellevueForm" class="form">
-              <input type="button" onclick="showBellevue()" value="Show Bellevue Square" id="bellevueButton">
-              <p>
-                <span id="bellevueSum" class="sums"></span>
-              </p>
-            </form>
-          </fieldset>
-
-          <fieldset class="col-1-3">
-            <legend class="title">Alki</legend>
-            <form id="alkiForm" class="form">
-              <input type="button" onclick="showAlki()" value="Show Alki" id="alkiButton">
-              <p>
-                <span id="alkiSum" class="sums"></span>
-              </p>
-            </form>
-          </fieldset>
-        </fieldset>
-      </div>
-    </div>
   </body>
 </html>
