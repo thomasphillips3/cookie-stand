@@ -50,7 +50,7 @@ var addStore = function(){
 
 function validateInputs(inputs){
   for (var i=1; i<inputs.length; i++){
-    console.log(inputs[i]);
+    // console.log(inputs[i]);
     if (isNaN(inputs[i])){
       // throw (e);
       console.log("Value at index " + i + " is NaN");
