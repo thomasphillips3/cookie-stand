@@ -1,28 +1,32 @@
-# Week 3-4, Class 9
-[**Week 3 Feedback**](https://canvas.instructure.com/courses/990777/assignments/4230202)
-*You will receive an email from Code Fellows with a link to the survey. Once complete, please complete this assignment as well.*
+# Week 3-4, Class 11
 
 # Reading Reminder
-* [“Text” (HTML & CSS, Ch. 12) ](https://canvas.instructure.com/courses/990777/assignments/4229973)
+* ["HTML5 Layout" (HTML & CSS, Ch. 17)](https://canvas.instructure.com/courses/990777/assignments/4229963)
+* ["Boxes" (HTML & CSS, Ch. 13)](https://canvas.instructure.com/courses/990777/assignments/4229988)
 
 # Assignment for Class
-In class, we learned how to refactor our cookie stand objects using a constructor and instances. Let's replace your object literals with a single constructor that when called with 'new', creates new instances. See pages 106-109 in your textbook for an example... and especially focus on 108 and 109.
+Today will be a day of refactoring! Your client has changed his mind on a few things and wants to overhaul the site.
 
-[Submit Your Work](https://canvas.instructure.com/courses/990777/assignments/4230003)
+[Submit Your Work](https://canvas.instructure.com/courses/990777/assignments/4230001)
 
 ## User Stories (MVP)
- - As a developer, I want to implement a constructor function, so that I can reuse code and eliminate much of the duplication in my JavaScript
- - As a developer, I want to continue to evolve my styleguide (keep working on adding more details or finishing up what's not complete)
+- As a user, I want my website to have it's own home page, separate from my sales data, so that I can begin to market and sell merchandise online
+- As a user, I want my salmon logo (see assets) and slogan *"Salmon cookies made with fish, salmon cookies are delish!"* in the header if my main page, so that my customers can identify me
+- As a user, I want my site to look nice and have photos which are relevant to my merchandise
+- As a user, I want my site to link to some other local salmon-related events, so that my users have additional supporting information and will see my site as a resource for all their salmon needs
+- As a developer, I need to provide Pat with some basic placeholder text ([lorem ipsum](http://www.lipsum.com)), so that he can see his site populated without having to write content
 
 ## Technical Requirements
- - Working on a non-master branch for the day, with regular commit history
- - Good use of a constructor function; style and syntax are correctly implemented
- - Duplicate code has been removed and DRY principles are evident
- - Styleguide is improving and becoming more specific (separate file from main page)
+ - Move all sales data to a new file, sales.html
+ - Redesign index.html to be a home page, which markets the stores and its merchandise
+ - Good and proper use of HTML 5
+ - Home page has been professionally styled, using the styleguide and a few specific CSS highlights that make things pop
+ - Photos from the assets folder (see Helpful Resources) have been used to enhance and style the main page
+ - Local events and Store specifics (phone, address, etc) have been listed on the page
+ - Good use of Lorem Ipsum to provide placeholder content for the site
 
 ## User Stories (Stretch)
- - As a user, I want to be able to add a new store to my webpage, so that I have the ability to work independently of my developer
-  - This is a large stretch goal. There will be Forms and Events involved, which you are welcome to read ahead on and try to implement.
+ - As a developer, I want to ensure that this site looks as professional as possible, using CSS, so I can use this as a portfolio piece
 
 ## Helpful Resources
 [Problem Domain Document](../assets/support.md)
