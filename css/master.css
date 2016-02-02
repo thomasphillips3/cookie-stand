@@ -1,3 +1,6 @@
+* {
+  font-family: 'Oswald', sans-serif;
+}
 body {
   background-image: url("../res/fishies.jpg");
   background-size: contain;
@@ -11,6 +14,28 @@ header {
   position: absolute; /* Why does this line affect my background-image?*/
   top: 0;
   left: 0;
+  overflow: hidden;
+}
+#patsLogo {
+  width: 20%;
+  padding-bottom: 20%;
+  position: relative;
+  float: left;
+}
+
+#headerPic {
+  width: 80%;
+  padding-bottom: 20%;
+  position: relative;
+  float: left;
+}
+.innerContent {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  padding: 0px;
 }
 
 #logo {
@@ -21,6 +46,9 @@ header {
   clear: both;
 }
 
-#logo2 {
-
+#slogan{
+  width: 75%;
+  color: lightgray;
+  font-style: italic;
+  text-align: center;
 }
