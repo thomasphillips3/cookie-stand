@@ -10,7 +10,7 @@ body {
 header {
   background-color: #106882;
   width: 100%;
-  height: 10.9375em;
+  height: 13em;
   position: absolute; /* Why does this line affect my background-image?*/
   top: 0;
   left: 0;
@@ -40,7 +40,7 @@ header {
 
 #logo {
   width: 25%;
-  height: 10.9375em;
+  height: 11em;
   margin: 0em auto;
   padding: 0em;
   clear: both;
@@ -51,4 +51,41 @@ header {
   color: lightgray;
   font-style: italic;
   text-align: center;
+}
+
+nav {
+  /*background: blue;
+  color: red;*/
+  position: absolute;
+  padding-top: 10em;
+  width: 100%;
+  z-index: 0;
+
+}
+
+#navItems, #navItems ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  background-color: lightgray;
+}
+
+#navItems li {
+  float: left;
+}
+
+#navItems li a, #navItems ul li a{
+  display: block;
+  text-align: center;
+  padding: .8em 1em;
+  text-decoration: none;
+}
+
+#navItems li a:hover , #navItems ul li a:hover{
+  background-color: #CD6723;
+}
+
+#navItems ul {
+  float: right;
 }
