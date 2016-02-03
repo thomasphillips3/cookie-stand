@@ -54,8 +54,6 @@ header {
 }
 
 nav {
-  /*background: blue;
-  color: red;*/
   position: absolute;
   padding-top: 10em;
   width: 100%;
@@ -88,4 +86,12 @@ nav {
 
 #navItems ul {
   float: right;
+}
+
+#mainSection {
+  background-color: #106882;
+  position: absolute;
+  top: 13em;
+  height: 100%;
+  width: 100%;
 }
