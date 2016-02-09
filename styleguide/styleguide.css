@@ -97,3 +97,7 @@
 .pagetitle {
   border-bottom: 1px lightgray solid;
 }
+
+fieldset {
+  background-color: #106882;
+}

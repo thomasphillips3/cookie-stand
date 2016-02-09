@@ -7,18 +7,23 @@
   background-color: rgb(68, 68, 68);
   color: lightgray;
 }
+body{
+  background-color: #106882;
+}
 
 /* Got template from: http://www.sanwebe.com/2013/10/css-html-form-styles */
 .body-theme {
+  margin-top: 2em;
+  margin-bottom: 2em;
   margin-left:auto;
   margin-right:auto;
-  max-width: 500px;
-  background: #F7F7F7;
-  padding: 25px 0px 25px 10px;
-  color: #CD6723;
+  max-width: 31.25em;
+  padding: 1.563em 0px 1.563em 0.625em;
+  color: #106882;
   text-shadow: 1px 1px 1px #FFF;
   border:5px solid #CD6723;
-  border-radius: 50px;
+  border-radius: 3.125em;
+  background-color: lightgray;
 }
 .body-theme h1 {
   font-size: 25px;
