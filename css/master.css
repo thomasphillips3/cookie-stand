@@ -128,3 +128,7 @@ h1 {
   font-variant: small-caps;
   font-size: 3em;
 }
+.caption {
+  text-align: center;
+  color: lightgray;
+}
