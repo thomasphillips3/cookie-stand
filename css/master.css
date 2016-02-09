@@ -6,7 +6,9 @@
   background-size: contain;
   padding: 0em;
 }
-
+body{
+  background-color: #106882;
+}
 header {
   background-color: #106882;
   width: 100%;
