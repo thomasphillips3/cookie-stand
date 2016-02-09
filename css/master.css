@@ -90,7 +90,7 @@ nav {
   float: right;
 }
 
-#mainSection {
+.mainSection {
   background-color: #106882;
   position: absolute;
   top: 13em;
@@ -108,10 +108,10 @@ nav {
   /*transform: matrix(1, -0.3, 0, 1, 0, 0);*/
 }
 
-#mainSection p {
+.mainSection p {
   text-align: center;
 }
-#mainSection p img {
+.mainSection p img {
   margin:auto;
 }
 #familyPic {
@@ -127,4 +127,8 @@ h1 {
   border-bottom: 1px solid gray;
   font-variant: small-caps;
   font-size: 3em;
+}
+.caption {
+  text-align: center;
+  color: lightgray;
 }
