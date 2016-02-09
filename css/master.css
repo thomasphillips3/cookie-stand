@@ -105,3 +105,21 @@ nav {
   transform: scale(1.25,1.25);
   /*transform: matrix(1, -0.3, 0, 1, 0, 0);*/
 }
+
+#mainSection p {
+  text-align: center;
+}
+#mainSection p img {
+  border-radius: 50em;
+  border: .25em #CD6723 solid;
+  margin:auto;
+}
+h1 {
+  margin: auto;
+  color: lightgray;
+  text-align: center;
+  font-size:
+  border-bottom: 1px solid gray;
+  font-variant: small-caps;
+  font-size: 3em;
+}
